@@ -1,6 +1,3 @@
-create database database_implementation;
-use database_implementation;
-
 CREATE TABLE DEPARTMENT (
     DNUM INT PRIMARY KEY,
     DName VARCHAR(100) NOT NULL,
@@ -53,4 +50,5 @@ CREATE TABLE LOCATION (
     PRIMARY KEY (DNUM, Location),
     FOREIGN KEY (DNUM) REFERENCES DEPARTMENT(DNUM)
 );
+
 
